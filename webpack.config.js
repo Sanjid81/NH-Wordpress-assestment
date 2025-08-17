@@ -5,7 +5,7 @@ const config = {
   entry: {
     app: "./src/scripts/index.js",
   },
-  mode: process.env.MODE,
+  mode: process.env.MODE || "development", 
   target: "web",
   output: {
     filename: "[name].js",
@@ -32,7 +32,16 @@ const config = {
       },
       {
         test: /\.s[ac]ss$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: "css-loader",
+            options: {
+              modules: false, 
+            },
+          },
+          "sass-loader", 
+        ],
       },
     ],
   },

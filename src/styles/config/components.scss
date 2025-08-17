@@ -1,0 +1,135 @@
+// banner-style
+.home-banner {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: $primary-bg;
+    position: relative;
+
+    .banner-overlay {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+    .banner-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 80px 0px 120px;
+        gap: 98px;
+        @include breakpoint-max(xl) {
+            padding: 0px 40px;
+
+        }
+        @include breakpoint-max(lg) {
+            flex-direction: column;
+            flex-direction: column-reverse;
+            padding: 50px 20px 0px 20px;
+        }
+        .banner-img {
+            width: 800px;
+            height: 100%;
+            object-fit: contain;
+            z-index: 999;
+
+            @include breakpoint-max(3xl) {
+                width: 500px;
+            }
+
+            @include breakpoint-max(xl) {
+                width: 350px;
+            }
+            @include breakpoint-max(lg) {
+                width: 600px;
+            }
+            @include breakpoint-max(md) {
+                width: 412px;
+                height: 100%;
+            }
+        }
+        .banner-content {
+            max-width: 682px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 999;
+
+
+            span {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+
+
+
+// .................
+
+// arlinks banner
+.common-banner{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+
+    .common-banner-container {
+        padding: 100px 120px;
+        display: flex;
+        justify-content: space-between;
+        gap: 200px;
+
+        @include breakpoint-max(xxl) {
+            padding: 100px 80px;
+        }
+
+        @include breakpoint-max(xl) {
+            flex-direction: column;
+            gap: 40px;
+            padding: 80px 20px;
+        }
+
+        h1 {
+            max-width: 825px;
+        }
+
+        .content {
+            max-width: 540px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            p {
+                color: $gray;
+            }
+
+            .project-button {
+                background-color: $orange !important;
+                border: none !important;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 820px;
+        object-fit: cover;
+
+        @include breakpoint-max(3xl) {
+            height: 520px;
+        }
+
+        @include breakpoint-max(xl) {
+            height: 400px;
+        }
+    }
+}
+
+
+
+
+
+

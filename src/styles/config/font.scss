@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+  /* Font Variables */
+$font_clash-grotesk: 'Clash Grotesk', sans-serif;
+$font-general-sans: "General", sans-serif;
+$font-inter: "inter", sans-serif;
+  
+  /* === UTILITY CLASSES (Family + Weight) === */
+  .font-extralight {
+    font-family: 'Clash Grotesk', sans-serif;
+    font-weight: 200;
+  }
+  
+  .font-light {
+    font-family: 'Clash Grotesk', sans-serif;
+    font-weight: 300;
+  }
+  
+  .font-regular {
+    font-family: 'Clash Grotesk', sans-serif;
+    font-weight: 400;
+  }
+  
+  .font-medium {
+    font-family: 'Clash Grotesk', sans-serif;
+    font-weight: 500;
+  }
+  
+  .font-semibold {
+    font-family: 'Clash Grotesk', sans-serif;
+    font-weight: 600;
+  }
+  
+  .font-bold {
+    font-family: 'Clash Grotesk', sans-serif;
+    font-weight: 700;
+  }
+// font general sans
+
+.font-general-sans-extralight {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+}
+
+.font-general-sans-light {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+.font-general-sans-regular {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.font-general-sans-medium {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.font-general-sans-semibold {
+    font-family: "general-sans", sans-serif;
+    font-weight: 600;
+}
+.font-general-sans-bold {
+    font-family: "general-sans", sans-serif;
+    font-weight: 700;
+}
+
+// font-inter
+.font-inter-medium {
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+}
+
+
