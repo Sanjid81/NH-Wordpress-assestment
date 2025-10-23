@@ -1,0 +1,229 @@
+.navbar {
+    max-width: 1290px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 56px;
+    margin: 0 auto;
+
+
+    @include breakpoint-max(3xl) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navbar-wrapper {
+        display: flex;
+        align-items: center;
+
+        justify-content: space-between;
+        width: 100%;
+
+        .nav-icons {
+            display: none;
+        }
+
+        .nav-left {
+            display: flex;
+            gap: 48px;
+            align-items: center;
+
+            a {
+                svg {
+                    // margin-right: 48px;
+
+                }
+            }
+
+
+
+
+
+            .nav-links {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 32px;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    // position: relative;
+
+
+                    &:hover {
+                        cursor: pointer;
+
+                        svg {
+                            rotate: 180deg;
+                            transition: all 0.3s ease-in-out;
+                        }
+
+                    }
+
+                    svg {
+
+                        &:hover {
+                            cursor: pointer;
+
+                            rotate: 180deg;
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+
+                    &:hover .submenu-list {
+                        opacity: 1;
+                        transform: translateY(0);
+                        visibility: visible;
+                    }
+
+
+                    .submenu-list {
+                        list-style: none;
+                        // display: none;
+                        position: absolute;
+                        background-color: rgba(239, 239, 239, 1);
+                        top: 65px;
+                        padding: 10px;
+                        opacity: 0;
+                        transform: translateY(10px);
+                        visibility: hidden;
+                        transition: all 0.3s ease;
+
+                        li {
+                            display: flex;
+                            flex-direction: column;
+                            padding: 14px 16px;
+
+                            &:hover {
+                                background-color: rgba(255, 255, 255, 1);
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+
+
+        }
+
+        @include breakpoint-max(md) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .nav-left {
+                .nav-links {
+                    display: none;
+                    flex-direction: column;
+                    gap: 16px;
+                    width: 100%;
+                    padding: 16px 40px;
+                    background-color: #ffffff;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                    position: absolute;
+                    top: 120px;
+                    left: 0;
+                    z-index: 100;
+                    align-items: flex-start;
+
+                    &.active {
+                        display: flex;
+                    }
+
+                    li {
+                        list-style: none;
+                        width: 100%;
+                        position: relative;
+
+                        a {
+                            display: block;
+                            width: 100%;
+                            padding: 12px 0;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #0047FF;
+                            text-decoration: none;
+                            transition: background-color 0.3s ease, color 0.3s ease;
+
+                            &:hover {
+                                background-color: #0047FF;
+                                color: #ffffff;
+                                border-radius: 4px;
+                            }
+                        }
+
+                        .submenu-list {
+                            display: none; // hidden by default
+                            flex-direction: column;
+                            gap: 8px;
+                            padding-left: 16px; // indent submenu
+                            background-color: #f0f0f0;
+                            border-radius: 4px;
+                            overflow: hidden; // for smooth transition
+                            transition: max-height 0.3s ease;
+
+                            li {
+                                padding: 8px 0;
+
+                                &:hover {
+                                    background-color: #e0e0e0;
+                                }
+                            }
+                        }
+
+                        &.submenu-active .submenu-list {
+                            display: flex;
+                        }
+
+                        &.submenu-active .submenu-list {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+
+            .nav-icons {
+                display: flex;
+                gap: 16px;
+
+                .close {
+                    display: none;
+                }
+            }
+
+
+            .nav-left .nav-links.active {
+                display: flex;
+            }
+
+            .nav-button {
+                display: none;
+            }
+
+            .nav-icons {
+                // display: flex;
+                // gap: 16px;
+                display: block;
+
+                .close {
+                    display: none;
+                }
+            }
+        }
+
+        .nav-button {
+            // margin-left: 555px;
+
+            // @include breakpoint-max(xl) {
+            //     margin-left: auto;
+            // }
+        }
+
+
+    }
+
+}

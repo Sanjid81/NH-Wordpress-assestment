@@ -1,0 +1,95 @@
+.blog-section {
+    padding: 120px 0;
+    background: #fff;
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+
+    // .container {
+    //     max-width: 1200px;
+    //     margin: 0 auto;
+    // }
+
+    .blog-header {
+        max-width: 730px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 60px;
+
+        h2 {
+            font-size: 50px;
+            line-height: 58px;
+            font-weight: 500;
+            margin-bottom: 20px;
+
+            @media (max-width: 800px) {
+                font-size: 30px;
+                line-height: 38px;
+            }
+        }
+
+        p {
+            color: rgba(82, 88, 102, 1);
+        }
+
+    }
+
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 700px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .blog-card {
+        background: #f9f9fb;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .blog-thumb img {
+            width: 100%;
+            height: 276px;
+            display: block;
+            margin-bottom: 24px;
+
+            @media (max-width: 700px) {
+                height: 350px;
+            }
+
+        }
+
+        .blog-content {
+            padding: 20px;
+
+            h3 {
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: 600;
+                color: rgba(10, 13, 20, 1)00;
+                margin-bottom: 12px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 18px;
+                font-weight: 400;
+                color: rgba(82, 88, 102, 1);
+            }
+        }
+    }
+}

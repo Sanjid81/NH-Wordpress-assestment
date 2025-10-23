@@ -1,5 +1,7 @@
 // configs
-// @import 'swiper/swiper-bundle.css';
+@import 'swiper/swiper-bundle.css';
+// import 'swiper/css/bundle';
+
 
 
 
@@ -14,10 +16,15 @@
 @import "./config/buttons.scss";
 
 // utilities
-
-
-
-
-
-
-
+@import "./components/navbar.scss";
+@import "./components/footer.scss";
+@import "./components/home/banner.scss";
+@import "./components/home/brands-img.scss";
+@import "./components/home/tab-content.scss";
+@import "./components/home/why-pik.scss";
+@import "./components/home/faq.scss";
+@import "./components/home/process.scss";
+@import "./components/home/testimonials.scss";
+@import "./components/home/status.scss";
+@import "./components/home/cta.scss";
+@import "./components/home/blog.scss";
