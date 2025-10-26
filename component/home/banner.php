@@ -1,7 +1,6 @@
 <?php
 defined('ABSPATH') || exit;
 
-// $args ashe get_template_part() theke
 $fields = $args['fields'] ?? [];
 ?>
 
